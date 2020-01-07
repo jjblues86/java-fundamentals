@@ -1,7 +1,7 @@
 # java-fundamentals
-First Several Labs of Java 401
+Repo for Labs of Java 401
 
 # Bacis - Main.java
-Pluralize Words
-FlipHeads(coins)
-CLock(command line)
+- Pluralize Words
+- FlipHeads(coins)
+- Clock(command line)
