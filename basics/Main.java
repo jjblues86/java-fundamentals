@@ -1,3 +1,6 @@
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class Main {
   public static void main(String[] args) {
 
@@ -10,6 +13,7 @@ public class Main {
     int turtleCount = 0;
     System.out.println("I own " + turtleCount + " " + pluralize("turtle", turtleCount) + ".");
     System.out.println(flipNHeads(6));
+    clock();
    
   }
 
@@ -48,6 +52,25 @@ public class Main {
     return "It took " + flips + " flips to flip " + heads +  " " + counter + " in a row";
   }
 
+
+  //Create a clock function
+  public static void clock(){
+
+    int pastSec = 2;
+    while(true){
+      LocalDateTime now = LocalDateTime.now();
+
+      //getting the seconds
+      int second = now.getSecond();
+      String time = now.format(DateTimeFormatter.ofPattern("HH:mm:ss"));
+
+      if(pastSec != second){
+        System.out.println(time);
+        pastSec = second;
+      }
+    }
+
+  }
 
 
   
