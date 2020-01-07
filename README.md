@@ -1,2 +1,7 @@
 # java-fundamentals
-First Several Labs of Java 401
+Repo for Labs of Java 401
+
+# Basics - Main.java
+- Pluralize Words
+- FlipHeads(coins)
+- Clock(command line)
