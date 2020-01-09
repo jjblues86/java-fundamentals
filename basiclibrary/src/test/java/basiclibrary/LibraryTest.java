@@ -5,6 +5,8 @@ package basiclibrary;
 
 import org.junit.Test;
 
+import java.util.Arrays;
+
 import static org.junit.Assert.*;
 
 public class LibraryTest {
@@ -30,6 +32,10 @@ public class LibraryTest {
                 {55, 54, 60, 53, 59, 57, 61},
                 {65, 56, 55, 52, 55, 62, 57}
         };
+//        int[] expecting = new int[] {55, 54, 60, 53, 59, 57, 61};
+        String expecting = Arrays.toString(weeklyMonthTemperatures[2]);
+        String result = Library.averageArrayValue(weeklyMonthTemperatures);
+        assertEquals(result, expecting);
     }
 
 }

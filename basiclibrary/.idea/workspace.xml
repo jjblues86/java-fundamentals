@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6f3c8fa6-77d1-4a0b-ac57-62474c86694f" name="Default Changelist" comment="" />
+    <list default="true" id="6f3c8fa6-77d1-4a0b-ac57-62474c86694f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/basiclibrary/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basiclibrary/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/basiclibrary/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/basiclibrary/LibraryTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,7 +32,7 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
-  <component name="RunManager" selected="Gradle.LibraryTest">
+  <component name="RunManager" selected="Gradle.LibraryTest.testCalculateAverageArrays">
     <configuration name="LibraryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -130,8 +135,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.LibraryTest" />
         <item itemvalue="Gradle.LibraryTest.testCalculateAverageArrays" />
+        <item itemvalue="Gradle.LibraryTest" />
         <item itemvalue="Gradle.LibraryTest.testCalculateAverage" />
         <item itemvalue="Gradle.LibraryTest.testContainsDuplicates" />
         <item itemvalue="Gradle.LibraryTest.rollTest" />
@@ -164,21 +169,25 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1578518432690">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1578519249594">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578518432690" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1578518432689">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578519249594" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1578519249593">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1578518432689" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1578518432689">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1578519249593" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1578519249593">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1578518432689" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1578518432690">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1578519249593" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1578519249594">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1578518432690" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1578519249594" />
+    <state x="399" y="263" key="com.intellij.ide.util.TipDialog" timestamp="1578523712405">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="399" y="263" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1578523712405" />
   </component>
 </project>
