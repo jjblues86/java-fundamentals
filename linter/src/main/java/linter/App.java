@@ -27,6 +27,8 @@ public class App {
             s = new Scanner(new BufferedReader(new FileReader(path)));
             while (s.hasNext()) {
                 line++;
+                System.out.println("Line " + line + ": Missing semicolon.");
+
                 if (!s.nextLine().endsWith(";") && !s.nextLine().isEmpty() && !s.nextLine().endsWith("{") && !s.nextLine().endsWith("}") && !s.nextLine().contains("if") && !s.nextLine().contains("else")) {
                     System.out.println("Line " + line + ": Missing semicolon.");
                 }
