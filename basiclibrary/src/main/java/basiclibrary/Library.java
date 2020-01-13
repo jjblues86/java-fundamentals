@@ -3,9 +3,8 @@
  */
 package basiclibrary;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Random;
+import java.util.*;
+import java.util.HashMap;
 
 public class Library {
     public static void main(String[] args) {
@@ -13,19 +12,19 @@ public class Library {
     }
 
     //Create a function to roll dice
-    public static int[] roll(int n){
+    public static int[] roll(int n) {
         int[] rolled = new int[n];
-        for(int i = 0; i < n; i ++){
+        for (int i = 0; i < n; i++) {
             rolled[i] = (int) (Math.random() * 6) + 1;
         }
         return rolled;
     }
 
     //Create a function to check for duplicates
-    public static boolean containsDuplicates(int[] array){
+    public static boolean containsDuplicates(int[] array) {
         int i, j;
-        for(i = 0; i < array.length; i++){
-            for(j = 1; j < array.length; j++){
+        for (i = 0; i < array.length; i++) {
+            for (j = 1; j < array.length; j++) {
                 if (array[i] == array[j] && i != j)
                     return true;
             }
@@ -34,11 +33,11 @@ public class Library {
     }
 
     //Create a function to calculate the average
-    public static double calculateAverage(int[] array){
+    public static double calculateAverage(int[] array) {
 
         double sum = 0;
         int i;
-        for(i = 0; i < array.length; i++){
+        for (i = 0; i < array.length; i++) {
             sum = sum + array[i];
         }
         double outcome = sum / array.length;
@@ -46,23 +45,23 @@ public class Library {
     }
 
     //Create a function to calculate the lowest average of arrays of arrays
-    public static String averageArrayValue(int[][] lowestArrayValue){
+    public static String averageArrayValue(int[][] lowestArrayValue) {
         ArrayList<Integer> averages = new ArrayList<>();
         int lowestAverage = Integer.MAX_VALUE;
         int lowestAverageIndex = 0;
         int arraysAverage = 0;
-        int i,j;
-        for(i = 0; i < lowestArrayValue.length; i++){
+        int i, j;
+        for (i = 0; i < lowestArrayValue.length; i++) {
             int result = 0;
-            for(j = 0; j < lowestArrayValue[i].length; j++){
+            for (j = 0; j < lowestArrayValue[i].length; j++) {
                 result += lowestArrayValue[i][j];
-                arraysAverage = result/7;
+                arraysAverage = result / 7;
             }
             averages.add(arraysAverage);
         }
 
-        for(j = 0; j < averages.size(); j++){
-            if(averages.get(j) < lowestAverage){
+        for (j = 0; j < averages.size(); j++) {
+            if (averages.get(j) < lowestAverage) {
                 lowestAverage = averages.get(j);
                 lowestAverageIndex = j;
             }
@@ -70,4 +69,54 @@ public class Library {
         return Arrays.toString(lowestArrayValue[lowestAverageIndex]);
 
     }
+
+    //Create a function to Map over an array of arrays
+    public static String arrayMinMaxValue(int[][] tempData) {
+        int minValue = Integer.MAX_VALUE;
+        int maxValue = Integer.MIN_VALUE;
+        String output = "";
+        int i, j;
+        HashSet<Integer> arrayData = new HashSet<>();
+        for (i = 0; i < tempData.length; i++) {
+            for (j = 0; j < tempData[i].length; j++) {
+                if ((tempData[i][j]) < minValue) {
+                    minValue = tempData[i][j];
+                }
+                if ((tempData[i][j]) > maxValue) {
+                    maxValue = tempData[i][j];
+                    arrayData.add(tempData[i][j]);
+                }
+            }
+            System.out.println("Max value :" + maxValue);
+            System.out.println("Min Value :" + minValue);
+
+
+            for (i = minValue; i < maxValue; i++) {
+                if (!arrayData.contains(i)) {
+                    output += "Never saw temperature: " + i;
+                }
+            }
+        }
+        return output;
+    }
+
+    //Create a function that tally lists of strings representing votes
+    public static String tally(List<String> votes){
+        HashMap<String, Integer> people = new HashMap<>();
+        int voteCounter = 0;
+        String winner = "";
+        for (String name : votes) {
+            people.put(name, 0);
+        }
+        for (String name : votes) {
+            if(people.get(name) > voteCounter){
+                voteCounter = people.get(name) + 1;
+                winner = name;
+            } else {
+                people.put(name, people.get(name) + 1);
+            }
+        }
+        return winner;
+    }
 }
+
