@@ -5,7 +5,12 @@ package inheritance;
 
 public class Restaurant {
 
-    int price;
+    public int price;
+    public String name;
+    public int starCounter = 0;
+
+
+
 
     public Restaurant(String name, int stars, int price) {
         super(name, stars);
