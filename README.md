@@ -19,3 +19,6 @@ Repo for Labs of Java 401
 # linter - App.java
 ## fileGate
 - A function that reads a JavaScript file with a given Path, and generates an error message whenever it finds a line that doesn’t end in a semi-colon.
+
+## inheritance - Restaurant.java, Reviews.java
+- Created the restaurant and reviews class which takes in a restaurant name and has a review section uniquely for each restuarant and therefore rates them accordingly to a customer's taste or experience.
