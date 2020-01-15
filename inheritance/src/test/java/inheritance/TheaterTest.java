@@ -22,4 +22,8 @@ public class TheaterTest {
         testTheater.addMovie("Adding movie");
         assertEquals("Add a movie", "[Adding movie]", testTheater.getMovies().toString());
     }
+    @Test public void testRemoveMovie(){
+        testTheater.removeMovie("Adding movie");
+        assertFalse("This remove a movie", testTheater.movies.contains("Adding movie"));
+    }
 }
