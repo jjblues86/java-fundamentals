@@ -26,6 +26,5 @@ public class RestaurantTest {
         Reviews testReview = new Reviews("This was awesome", "Jabin", 5);
         Reviews testReviews = new Reviews("Best choice", "kay Jay", 4);
         assertEquals("This should update the reviews", 3, testRestaurant.stars);
-
     }
 }
