@@ -3,12 +3,29 @@
  */
 package inheritance;
 
+import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class RestaurantTest {
-    @Test public void testSomeLibraryMethod() {
-        Restaurant classUnderTest = new Restaurant();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
+
+    Restaurant testRestaurant;
+    @Before
+    public void start() {
+        testRestaurant = new Restaurant("Wendys", 3, 5);
+    }
+    @Test public void testToString(){
+        assertEquals("Restaurant: Wendys, Price: 3", testRestaurant.toString());
+    }
+    @Test public void testaddReview(){
+        Reviews testReview = new Reviews("This was awesome", "Jabin", 5);
+//        testRestaurant.addReview(testReview);
+        assertEquals("This should update the reviews", 3, testRestaurant.stars);
+    }
+    @Test public void testAverageStars(){
+        Reviews testReview = new Reviews("This was awesome", "Jabin", 5);
+        Reviews testReviews = new Reviews("Best choice", "kay Jay", 4);
+        assertEquals("This should update the reviews", 3, testRestaurant.stars);
+
     }
 }
