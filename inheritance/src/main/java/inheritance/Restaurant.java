@@ -3,23 +3,44 @@
  */
 package inheritance;
 
+import java.util.LinkedList;
+import java.util.StringJoiner;
+
 public class Restaurant {
 
-    public int price;
+    LinkedList<Reviews> restaurantsReviews = new LinkedList<>();
     public String name;
-    public int starCounter = 0;
+    public int stars;
+    public int priceCategory;
 
 
-
-
-    public Restaurant(String name, int stars, int price) {
-        super(name, stars);
-        this.price = price;
+    public Restaurant(String name, int stars, int priceCategory) {
+        this.name = name;
         this.stars = stars;
-
+        this.priceCategory = priceCategory;
     }
 
-    public int getPrice() {
-        return price;
+    public int addReview(Reviews review){
+        restaurantsReviews.add(review);
+
+        double starCounter = 0;
+        double average;
+
+        for(Reviews reviews: restaurantsReviews){
+            starCounter += reviews.numberOfStars;
+        }
+
+        average = starCounter / restaurantsReviews.size();
+        this.stars = (int) average;
+        return (int) average;
+
+//        starCounter += review.numberOfStars;
+    }
+
+
+    public String toString(){
+//        StringJoiner restaurants = new StringJoiner("\n");
+        return String.format("Restaurant: %s, Price: %d", this.name, this.stars, this.priceCategory);
+
     }
 }
