@@ -7,7 +7,7 @@ public class Store implements Reviewer {
     LinkedList<Reviews> restaurantsReviews = new LinkedList<>();
     public String name;
     public int stars;
-    public int priceCategory;
+    public static int priceCategory;
 
     public Store(String name, int stars, int priceCategory) {
         this.name = name;
@@ -16,7 +16,7 @@ public class Store implements Reviewer {
     }
 
     @Override
-    public int addReview(Reviews review) {
+    public void addReview(Reviews review) {
         restaurantsReviews.add(review);
 
         double starCounter = 0;
@@ -28,7 +28,5 @@ public class Store implements Reviewer {
 
         average = starCounter / restaurantsReviews.size();
         this.stars = (int) average;
-        return (int) average;
-
     }
 }
