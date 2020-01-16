@@ -7,7 +7,7 @@ Repo for Labs of Java 401
 - Clock(command line)
 
 ## basicLibrary - Library.java
- Rolling Dice - A function that rolls a dice and returns a random value of the dice
+ - Rolling Dice(A function that rolls a dice and returns a random value of the dice)
 
 - Contains Duplicates(A function that checks for duplicates in an array)
 
