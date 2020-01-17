@@ -11,7 +11,7 @@ public class ShopTest {
         testShop = new Shop("kaynBee", "An event planning shop", 7, 4);
     }
     @Test public void testToString(){
-        assertEquals("This should print out a string about the shop", "Shop: kaynBee \n Description: An event planning shop \n Price: 7", testShop.toString());
+        assertEquals("This should print out a string about the shop", "Shop: kaynBee\nPrice: 7\nStars: 4\nDescription: An event planning shop", testShop.toString());
     }
     @Test public void testAddReview(){
         Reviews testReview = new Reviews("Great shop", "Kay", 5);

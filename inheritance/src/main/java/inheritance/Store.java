@@ -7,7 +7,7 @@ public class Store implements Reviewer {
     LinkedList<Reviews> restaurantsReviews = new LinkedList<>();
     public String name;
     public int stars;
-    public static int priceCategory;
+    public int priceCategory;
 
     public Store(String name, int stars, int priceCategory) {
         this.name = name;
@@ -28,5 +28,9 @@ public class Store implements Reviewer {
 
         average = starCounter / restaurantsReviews.size();
         this.stars = (int) average;
+    }
+
+    public String toString(){
+        return String.format("Shop: %s\nPrice: %d\nStars: %d", this.name, this.priceCategory, this.stars);
     }
 }

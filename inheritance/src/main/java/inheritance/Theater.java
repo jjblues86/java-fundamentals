@@ -6,8 +6,8 @@ public class Theater extends Store {
     public String name;
     LinkedList<String> movies;
 
-    public Theater(String name, int stars) {
-        super(name,stars,priceCategory);
+    public Theater(String name, int stars, int price) {
+        super(name,stars,price);
         this.name = name;
         this.movies = new LinkedList<>();
     }
